@@ -12,7 +12,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.bottomnavigation.BottomNavigationMenu;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -27,9 +26,6 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
     HelpFragment helpFragment=new HelpFragment();
     FragmentManager manager1 = getSupportFragmentManager();
     FragmentTransaction transaction1 = manager1.beginTransaction();
-
-
-
 
 
     @Override
@@ -48,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        transaction1.replace(R.id.container, homeFragment);
+        transaction1.replace(R.id.container,homeFragment);
         transaction1.commit();
 
     }
@@ -61,25 +57,24 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
 
         switch (menuItem.getItemId()) {
             case R.id.Home:
-                transaction.replace(R.id.container, homeFragment).commit();
+                transaction.replace(R.id.container, homeFragment);
                 break;
 
             case R.id.LiveClasses:
-                transaction.replace(R.id.container, liveClasses).commit();
+                transaction.replace(R.id.container, liveClasses);
                 break;
 
             case R.id.Downloads:
-                transaction.replace(R.id.container, downloadsFragment).commit();
+                transaction.replace(R.id.container, downloadsFragment);
                 break;
 
             case R.id.Help:
-                transaction.replace(R.id.container,helpFragment).commit();
+                transaction.replace(R.id.container,helpFragment);
                 break;
 
 
         }
-//        transaction.commit();
-
+        transaction.commit();
         return true;
     }
 
