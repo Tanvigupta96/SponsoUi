@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home" android:id="@+id/Home" android:icon="@drawable/shelter"/>
+
+    <item android:title="Live Classes" android:id="@+id/LiveClasses" android:icon="@drawable/videocamera"/>
+
+    <item android:title="Downloads" android:id="@+id/Downloads" android:icon="@drawable/download"/>
+
+    <item android:title="Help" android:id="@+id/Help" android:icon="@drawable/question"/>
+
+</menu>
+
