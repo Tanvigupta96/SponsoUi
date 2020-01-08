@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragement" />
 
-</FrameLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Study Material"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="15dp"
+            />
+
+
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_tabs"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_tabs_pager"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+
+</LinearLayout>
