@@ -12,7 +12,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.bottomnavigation.BottomNavigationMenu;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -27,9 +26,6 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
     HelpFragment helpFragment=new HelpFragment();
     FragmentManager manager1 = getSupportFragmentManager();
     FragmentTransaction transaction1 = manager1.beginTransaction();
-
-
-
 
 
     @Override
@@ -79,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
 
         }
         transaction.commit();
-
         return true;
     }
 
