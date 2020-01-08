@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-        transaction1.replace(R.id.container,homeFragment);
+        transaction1.replace(R.id.container, homeFragment);
         transaction1.commit();
 
     }
@@ -61,24 +61,24 @@ public class MainActivity extends AppCompatActivity implements  BottomNavigation
 
         switch (menuItem.getItemId()) {
             case R.id.Home:
-                transaction.replace(R.id.container, homeFragment);
+                transaction.replace(R.id.container, homeFragment).commit();
                 break;
 
             case R.id.LiveClasses:
-                transaction.replace(R.id.container, liveClasses);
+                transaction.replace(R.id.container, liveClasses).commit();
                 break;
 
             case R.id.Downloads:
-                transaction.replace(R.id.container, downloadsFragment);
+                transaction.replace(R.id.container, downloadsFragment).commit();
                 break;
 
             case R.id.Help:
-                transaction.replace(R.id.container,helpFragment);
+                transaction.replace(R.id.container,helpFragment).commit();
                 break;
 
 
         }
-        transaction.commit();
+//        transaction.commit();
 
         return true;
     }
