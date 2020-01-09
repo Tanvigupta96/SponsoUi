@@ -21,10 +21,10 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
 
         switch (i){
 
+
             case 0:
                 E_BooksFragment e_booksFragment= new E_BooksFragment();
                 return e_booksFragment;
-
                 case 1:
                 Class_NotesFragment class_notesFragment= new Class_NotesFragment();
                 return class_notesFragment;

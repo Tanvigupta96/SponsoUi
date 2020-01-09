@@ -33,12 +33,12 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View output  = inflater.inflate(R.layout.fragment_home, container, false);
 
-       /* myViewpager = output.findViewById(R.id.main_tabs_pager);
+        myViewpager = output.findViewById(R.id.main_tabs_pager);
         myTabAccessorAdapter = new TabsAccessorAdapter(getFragmentManager());
         myViewpager.setAdapter(myTabAccessorAdapter);
 
         myTabLayout = output.findViewById(R.id.main_tabs);
-        myTabLayout.setupWithViewPager(myViewpager);*/
+        myTabLayout.setupWithViewPager(myViewpager);
 
         return output;
     }

@@ -4,4 +4,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="study_material">Study Material</string>
+    <string name="e_books">E-Books</string>
+    <string name="class_notes">Class Notes</string>
+    <string name="previous_year_notes">Previous Year Notes</string>
+    <string name="name_of_book">Name Of Book</string>
+    <string name="free_pdf">Free PDF</string>
+    <string name="buy_now">Buy Now</string>
 </resources>
